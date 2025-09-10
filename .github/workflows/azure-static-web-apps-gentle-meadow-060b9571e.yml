@@ -49,7 +49,7 @@ jobs:
           skip_app_build: true
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "dist/coffee-machine-web" # Built app content directory - must match Angular build output
+          output_location: "dist/coffee-machine-web/browser" # Built app content directory - must match Angular build output
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
